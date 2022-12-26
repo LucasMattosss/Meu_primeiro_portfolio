@@ -10,23 +10,23 @@ export const links = [
         path: '/'
     },
     {
-        name: "About",
+        name: "Sobre",
         path: '/about'
     },
     {
-        name: "Gallery",
+        name: "Galeria",
         path: '/gallery'
     },
     {
-        name: "Plans",
+        name: "Planos",
         path: '/plans'
     },
     {
-        name: "Trainers",
+        name: "Treinos",
         path: '/trainers'
     },
     {
-        name: "Contact",
+        name: "Contatos",
         path: '/contact'
     }
 ]
@@ -119,7 +119,7 @@ export const faqs = [
     },
     {
         id: 2,
-        question: "What time of day is best to work out?",
+        question: "Com que frequência devo me exercitar?",
         answer: "A adipisição será realizada. Não é a dor em si, mas o fato de que todos vão sofrer com ela, fugindo dos tempos que não sabem tirar alguma vantagem na culpa do ódio, para que sejam repelidos e afins para suportar!"
     },
     {

@@ -19,11 +19,10 @@ const Values = () => {
         </div>
 
         <div className="values__right">
-            <SectionHead icon={<GiCutDiamond/>} title="Values"/>
+            <SectionHead icon={<GiCutDiamond/>} title="Valores Dos Planos"/>
             <p>
 
-                Loren ipsum dolor sit amet consectetur, adipisicin elit. officiis quidem aperiam
-                sapient?
+               
             </p>
             <div className="values__wrapper">
                 {

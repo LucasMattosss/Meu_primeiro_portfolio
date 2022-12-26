@@ -28,30 +28,30 @@ const Footer = () => {
         </article>
         <article>
 
-          <h4>Permalinks</h4>
-        <Link to= "/about">About</Link>
-        <Link to= "/plans">Plans</Link>
-        <Link to= "/trainers">Trainers</Link>
-        <Link to= "/gallery">Gallery</Link>
-        <Link to= "/contact">Contact</Link>
+          <h4>Páginas</h4>
+        <Link to= "/about">Sobre</Link>
+        <Link to= "/plans">Planos</Link>
+        <Link to= "/Treinos">Trainers</Link>
+        <Link to= "/gallery">Galeria</Link>
+        <Link to= "/contact">Contato</Link>
 
 
         </article>
       <article>
 
-        <h4>Get In Touch</h4>
-        <Link to= "/contact">About</Link>
-        <Link to= "/s">Plans</Link>
+        <h4>Entrar em contato</h4>
+        <Link to= "/contact">Sobre</Link>
+        <Link to= "/s">Planos</Link>
   
       </article>
       
       <article>
       <h4>Insights</h4>
       <Link to= "/s">Blog</Link>
-      <Link to= "/s">Case Studies</Link>
-      <Link to= "/s">Events</Link>
-      <Link to= "/s">Communities</Link>
-      <Link to= "/s">FAQs</Link>
+      <Link to= "/s"></Link>
+      <Link to= "/s">Eventos</Link>
+      <Link to= "/s">Comunidade</Link>
+      <Link to= "/s">Perguntas</Link>
       </article>
 
     </div>

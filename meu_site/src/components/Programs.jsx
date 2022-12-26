@@ -12,7 +12,7 @@ const Programs = () => {
   return (
     <section className="programs">
         <div className="container programs__container">
-            <SectionHead icon={<FaCrown/>} title="Programs"/>
+            <SectionHead icon={<FaCrown/>} title="Planos"/>
         
 
         <div className="programs__wrapper">

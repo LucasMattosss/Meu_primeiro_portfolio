@@ -9,9 +9,9 @@
 }
 
 :root {
-    --primary--hue:150; /* Rsponsavel, por a cor de fundo*/
-    --gray-hue: 133;
-    --color-primary: hsl(var(--primary--hue)
+    --primary--hue:838; /* Rsponsavel, por a cor de fundo*/
+    --gray-hue: 189;
+    --color-primary1: hsl(var(--primary--hue)
      100%, 50% );
      --color-primary-variant: hsl(var(--primary--hue),
      100%, 65% );

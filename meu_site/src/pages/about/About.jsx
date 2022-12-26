@@ -10,8 +10,8 @@ import React from 'react'
 const About = () => {
   return (
     <>
-    <Header title="About US" image={HeaderImage}>
-      Lorem ipsum dolor sit amet consectetur adipiscinf elit
+    <Header title="Sobre" image={HeaderImage}>
+Nessa Academia, formamos programadores
       </Header>
     </>
       

@@ -10,9 +10,9 @@ const Contact = () => {
   return (
    <>
    
-   <Header title='Get In Touch' image={HeaderImage}>
-    Frugfsgsgsfdgsgsdgdsgdg
-   </Header>
+   <Header title='Entrar em contato' image={HeaderImage}>
+(    08009080088
+)   </Header>
    </>
    
   )

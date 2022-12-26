@@ -7,8 +7,8 @@ import React from 'react'
 const Gallery = () => {
   return (
     <>
-    <Header title='Get In Touch' image={HeaderImage}>
-    Frugfsgsgsfdgsgsdgdsgdg
+    <Header title='Galeeria de fotos' image={HeaderImage}>
+    todas as fotos aqui
    </Header>    
     </>
   )
