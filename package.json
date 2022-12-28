@@ -1,6 +1,18 @@
 {
   "dependencies": {
+    "framed-scroll-motion": "^0.0.1",
+    "framer-motion": "^7.6.5",
     "react-icons": "^4.6.0",
-    "react-router-dom": "^5.3.4"
+    "react-particles": "^2.5.3",
+    "react-router-dom": "^5.3.4",
+    "react-simple-typewriter": "^4.0.5",
+    "react-tsparticles": "^2.5.3",
+    "react-typical": "^0.1.3",
+    "typewriter-effect": "^2.19.0"
+  },
+  "devDependencies": {
+    "i": "^0.3.7",
+    "npm": "^8.19.3",
+    "tsparticles": "^2.5.3"
   }
 }

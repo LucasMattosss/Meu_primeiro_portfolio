@@ -1,0 +1,92 @@
+*{
+    margin: 2px;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    display: flex ;
+    height: 90vh;
+    top: 10vh;
+
+}
+.TUDO{
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 10%;
+}
+
+
+.nomes{
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 2em;
+
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+   
+    white-space: nowrap;
+    overflow: hidden;
+
+   
+
+
+
+}
+
+.typing-animation{
+    animation:
+    typig 2s steps(20) 1s normal both;
+    
+    
+}
+
+@keyframes typig {
+    from{
+        width: 0;
+    }
+    to{
+        width: 9em;
+    }
+
+}
+/* -------------ANIMAÇÃO 2-----------------*/
+.typing-animation_1{
+    animation:link_cursor 900ms steps(40)  normal, 
+    typig1 2s steps(20) 3s normal both;
+    color: rgba(110, 0, 196, 1);
+
+
+
+
+}
+
+@keyframes typig1 {
+    from{
+        width: 0;
+    }
+    to{
+        width: 13em;
+    }
+
+}
+/* -------------ANIMAÇÃO 3-----------------*/
+
+
+.typing-animation_2{
+    animation:link_cursor 900ms steps(40)  normal, 
+    typig2 4s steps(30) 5s normal both;
+    font-size: 1em;
+    align-items:flex-start ;
+    color: rgba(255, 255, 255, 0.20);
+
+}
+
+@keyframes typig2 {
+    from{
+        width: 0;
+    }
+    to{
+        width: 17em;
+    }
+
+}
+

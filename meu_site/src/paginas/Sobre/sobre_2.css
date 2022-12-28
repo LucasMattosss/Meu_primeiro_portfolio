@@ -1,0 +1,37 @@
+.sobre2{
+    color: red;
+    text-align: justify;
+    font-size: 30px;
+ 
+    
+
+
+}
+
+.sobre2{
+    width: 700px;
+    position: absolute;
+
+}
+
+.sobre2 {
+    top: 100px;
+    margin-left: 400px;
+
+}
+.sobre2 h1{
+    text-align: center;
+    margin: 20px;
+    color: antiquewhite;
+    font-size: 1.4em;
+    align-items: center;
+    justify-items: center;
+
+    
+}
+.sobre2 p{
+  
+    color: rgb(94, 90, 85);
+    
+}
+

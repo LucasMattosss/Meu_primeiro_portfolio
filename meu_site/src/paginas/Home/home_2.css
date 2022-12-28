@@ -1,0 +1,27 @@
+.btn lg{
+    color: red;
+}
+
+.button1{
+
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0.9rem 2rem;
+    border: 2px solid  rgba(110, 0, 196, 1);
+    border-radius: 2.5rem;
+    color: rgba(255, 255, 255, 0.75);
+    color: rgba(110, 0, 196, 1);
+    position: absolute;
+
+
+
+}
+.button1:hover{
+    background: rgba(110, 0, 196, 1);
+    
+    
+}
+
+.btn a{
+    position: absolute;
+}

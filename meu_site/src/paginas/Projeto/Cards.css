@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+}
+
+.contrainer_cards{
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+padding: 260px ;
+gap: 200px;
+min-height: 100vh;
+align-items: center;
+
+
+
+}
+.contrainer_cards .box{
+    position: relative;
+    width: 350px;
+    height: 220px;
+
+    /*background-image: url(../images/imagem4.jpg);
+     */
+     background: rgb(203,188,195);
+     background: radial-gradient(circle, rgba(203,188,195,1) 0%, rgba(57,61,65,1) 100%);
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+
+}
+
+.contrainer_cards .box::before{
+    content: '';
+    position: absolute;
+    inset: -20px 50px;
+    border-top: 2px solid rgb(120,61,154);;
+    border-bottom: 2px solid rgb(120,61,154);;
+    transform: skewY(5deg);
+    z-index: -1;
+
+    transition: 0.7s ease-in-out;
+   
+}
+.contrainer_cards .box:hover::before{
+    transform: skewX(0deg);
+    inset: -15px -9px;
+
+}
+.contrainer_cards .box::after {
+    content: '';
+    position: absolute;
+    inset: 60px  -10px;
+    border-left: 2px solid rgb(120,61,154);;
+    border-right: 2px solid rgb(120,61,154);;
+    transform: skew(15deg);
+    transition: 0.7s ease-in-out;
+    z-index: -1;
+
+}
+.contrainer_cards .box:hover::after{
+    transform: skew(0deg);
+    inset: -14px -10px;
+    transition: 0.9s ease-in-out;
+
+
+}
+
+
+
+
+
+
+
+
+
+.contrainer_cards .box .content{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    padding: 0 20px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+
+}
+
+.contrainer_cards .box .content .icon{
+    color: rgb(120,61,154);
+    width: 99px;
+    display: flex;
+    font-size: 1.5em;
+
+    justify-content: center;
+    transition: 0.5s ease-in-out;
+    
+}
+.contrainer_cards .box:hover .content .icon{
+    opacity: 0;
+}
+
+.contrainer_cards .box:hover .content { /* cor animação*/
+    background: transparent;
+    color: #f94747;
+
+     
+}
+
+.contrainer_cards .box .content .text h3{
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: 500;
+    transition: 0.5s ease-in-out;
+}
+
+.contrainer_cards .box:hover .content .text h3{
+    opacity: 0;
+}
+
+.contrainer_cards .box .content .text p{
+    color: #777;
+    transition: 0.5s ease-in-out;
+    opacity: 0;
+
+}
+
+.contrainer_cards .box:hover .content .text p{
+   color: #2e2e2e;
+}
+
+.contrainer_cards .box .content .text a{
+    position: relative;
+    background: red;
+
+    color: #2e2e2e;
+    padding: 10px 20px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 100;
+    margin-top: 10px;
+    transition: 0.5s ease-in-out;
+    border: 2px solid rgb(255, 0, 162);
+    border-radius: 50px;
+    margin: 2vh ;
+
+}
+
+.contrainer_cards .box .content .text a:hover{
+    background: rgb(120,61,154);;
+    display: inline-block;
+    transform: scale(1.2);
+    color: #fff;
+    
+    
+}
+
+.contrainer_cards .box:hover .content .text a{
+color: turquoise;
+
+
+}
+
+
+.contrainer_cards .box:hover { /* cor animação*/
+    transform: scale(1.2);
+    transition: 0.4s ease-in-out; 
+}
+
+.contrainer_cards .box .content .botao_cards a{
+    position: relative;
+    background: transparent;
+    opacity: 1;
+    color: #efebeb;
+    padding: 9px 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 100;
+    transition: 0.5s ease-in-out;
+    border: 3px solid rgb(120,61,154);
+    
+    margin: 4vh ;
+    margin-bottom: -25vh;
+}
+
+.contrainer_cards .box:hover .content .botao_cards a{
+    opacity: 1;
+    transition: 0.4s ease-in-out; 
+}
+.contrainer_cards .box .content .botao_cards a:hover{
+    transform: scale(1.2);
+    background: rgb(120,61,154);
+    background: linear-gradient(90deg, rgba(120,61,154,1) 19%, rgba(63,36,83,1) 100%);
+
+    border: 2px solid rgb(21, 21, 21);
+
+}
+.contrainer_cards .box:hover .content .botao_cards {
+    animation: tremer 0.2s;
+    animation-iteration-count: 3;
+    animation-delay: 1s;
+  }
+  @keyframes tremer {
+    0% {margin-left: 0px}
+    25% {margin-left: 3px;}
+    50% {margin-left: 0;}
+    75% {margin-left: -3px;}
+    100% {margin-left: 0;}
+}

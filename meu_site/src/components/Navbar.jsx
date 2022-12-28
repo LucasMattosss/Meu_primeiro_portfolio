@@ -1,61 +1,102 @@
-
-import{ useState} from 'react'
-import {Link, NavLink } from 'react-router-dom'
-import Logo from '../images/logo.png'
-import './navbar.css'
-import {links} from '../data'
-import {GoThreeBars} from 'react-icons/go'
-import {MdOutlineClose} from 'react-icons/md'
 import React from 'react'
+import {Link, NavLink} from 'react-router-dom'
+import { links } from '../Date'
+import {GoThreeBars} from 'react-icons/go'
+import {AiFillHome} from 'react-icons/ai'
+import {IoIosContact} from 'react-icons/io'
+import {RiComputerFill} from 'react-icons/ri'
+import  { useState, useEffect } from "react";
 
 
-const Navbar = () => {
-    const[isNavShowing, setIsNavShowing] =useState(false);
+import {AiTwotoneReconciliation} from 'react-icons/ai'
 
 
+import './Nav.css'
 
+const NavBar = () => {
 
-  return (
-    <nav>
-        <div className="container nav__container">
-            <Link to="/" className='logo' onClick={() => setIsNavShowing(false)}>
-                <img src={Logo} alt="Nav Logo" />
-            </Link>
-              <u1 className ={`nav__links ${isNavShowing ? 'show__nav': 'hide__Nav'}`}>
-                {
-                  links.map(({name, path}, index) =>{
-                    return (
-                         /*  <li>
-                            <NavLink to={path} className= {isActive => (isActive ? 'active-nav' : 
-                             '') }>{name}</NavLink> 
-                          </li> */
-                          <li key={index}>
-                            <NavLink to={path} className={(isActive) => (isActive ? 'active-nav': '')} onClick={() => setIsNavShowing
-            ( prev => !prev) }>{name}</NavLink>
-                          
-                          </li>
+    const [animate, setanimate] =useState(false)
 
-                          )
-                    
-                  
-                  })
-                }
-
-              </u1>
-
+    useEffect(() =>{
+        
+            console.log("alo")
+            setanimate(true)
             
-          <button className='nav__toggle-btn' onClick={() => setIsNavShowing
-            ( prev => !prev) }>
-              {
-                isNavShowing ? <MdOutlineClose/> : <GoThreeBars/>
-              }
 
+    })
+    
+    return(
+            <div className="nav">
+                <div className={`menu ${animate && "active"}`} style={{"--d":2}}>
+                    <a href='/home'>
+                        <AiFillHome/>
+                    </a>
+                    <div id='tooltip'>Home</div>
+                </div>
+
+
+
+
+
+                <div className={`menu ${animate && "active"}`}style={{"--d":3}}>
+                    <a href='projetos'>
+                        <RiComputerFill/>
+                    </a>
+                    <div id='tooltip'>Projetos</div>
+                </div>
+
+
+
+
+
+                <div className={`menu ${animate && "active"}`} style={{"--d":4}}>
+                    <a href='sobre'>
+                        <AiTwotoneReconciliation/>
+                    </a>
+                    <div id='tooltip'>Sobre</div>
+                </div>  
+
+
+
+                <div className={`menu ${animate && "active"}`}style={{"--d":5}}>
+                    <a href='contato'>
+                        <IoIosContact/>
+                    </a>
+                    <div id='tooltip'>Contato</div>
+                </div>
+
+
+
+
+
+            </div>
             
-          </button> 
-             
-        </div>
-    </nav>
-  )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            )
+
+
+
+
+
+
+
+
+
+
+
 }
 
-export default Navbar
+export default NavBar

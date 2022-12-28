@@ -1,0 +1,176 @@
+/* ==============Começo Icones======================*/
+
+.retangulo .nav1{
+
+    position: relative;
+    float: left;
+    width: 80%;
+    border-radius: 2.5rem;
+    align-items: center;
+    height: 12em;
+    margin-left: 35%;
+    border: 1px solid  transparent;
+        top: 800px;
+
+    
+    
+  
+
+}
+.nav1 img {
+    max-width:70px;
+    max-height:70px;
+    width: auto;
+    height: calc(200vh - 3rem);
+    gap: 10rem;
+
+
+
+
+}
+.nav1{
+    position: fixed;
+    display: flex;
+    bottom: 1px;
+    color: rgb(102, 243, 8);
+    left: 0%;
+    transform:  translateX(-10%);
+    z-index: 1;
+
+}
+
+.nav1 .menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 151px;
+    border-radius: 10%;
+    
+    border: 5px solid  rgba(110, 0, 196, 1);
+    border: 1px solid  rgb(161, 111, 199);
+
+
+    margin: 0 15px;
+    bottom: 0;
+    cursor: pointer;
+    transform:  translateY(100px);
+    opacity: 0;
+    transition: 0.2s ease;
+    flex-flow: column wrap;
+    margin-bottom: 48%;
+
+
+
+}
+
+.nav1 .menu.active{
+    animation: inset 2s ease forwards;
+    animation-delay: calc(var(--d)*.35s);
+    
+    
+}
+.nav1 img:hover{
+    transform: scale(1.1);
+    filter: blur(5px);
+    bottom: 10px;
+    top: 100%;
+    height: calc(100vh - 3rem);
+    gap: 10rem;
+    
+
+    
+    
+}
+
+
+@keyframes inset {
+    to{
+
+    
+    opacity: 1;
+    transform: translateY(-10px);
+}}
+
+.nav1 .menu a{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 11%;
+    height: 10%;
+    border-radius: 15%;
+    color: rgba(255, 255, 255, 0.849);
+    font-size: 25px;
+    text-decoration: none;
+    transform: scale(1.1);
+
+
+}
+
+.nav1 .menu:hover{
+    bottom: 30px;
+}
+#tooltip1{
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    padding: 1px 1px;
+    color: rgb(245, 238, 238);
+    font-size: 25px;
+    font-weight: 10;
+    
+
+    backdrop-filter: blur(115px);
+    z-index: 1;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.4s ease;
+    filter: blur(0px);
+    transform: scale(1.1);
+    background: black;
+    border-radius: 20%;
+
+
+
+}
+#tooltip1::after{
+    position: absolute;
+    content: "";
+    height: 10px;
+    width: 10px;
+    border: 1px solid transparent;
+    filter: blur(0px);
+    transform: scale(1.1);
+
+
+    
+}
+
+.nav1 .menu:hover #tooltip1{
+opacity: 1;
+filter: blur(0px);
+position: absolute;
+transform: scale(1.1);
+
+
+
+
+}
+
+/* ==============Fim Icones======================*/
+
+.skills h1{
+    margin-top: -510%;
+    margin-left: -495%;
+    color: antiquewhite;
+    justify-items: center;
+    align-items: center;
+    font-size: 2.2em;
+    margin-top: -390px;
+
+    position: relative;
+    display: flex;
+}
+
